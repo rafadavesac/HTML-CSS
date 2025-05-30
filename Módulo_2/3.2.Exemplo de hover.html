@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        div > p{ /*Se aplica ao <p> dentro da div*/
+            display: none; /*Não mostra o elemento*/
+        }
+
+        div:hover > p{ /*Quando o mouse passar em cima da div que tem o <p> dentro*/
+            display: block; /*mostra o elemento*/
+            color:#FEB259;
+        }
+
+        div:hover{
+            color:#FEB259;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <h3>Passe o mouse sobre o texto abaixo</h3>
+    <div>
+        **---✨✨✨✨----**
+        <p>twinkle twinkle</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>

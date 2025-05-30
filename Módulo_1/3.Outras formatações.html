@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-uva.ico" type="image/x-icon">
+    <title>Outra formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>Tag &lt code &gt: deixa as letras em fonte de código</p>
+    <p>Tag &lt pre &gt: considera os espaços e linhas puladas no parágrafo</p>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
+    <!-- Shift + Tab faz o parágrafo todo 'encostar na parede'
+     Para reverter isso, basta selecionar todo o parágrafo novamente e apertar Tab
+    -->
+    <pre>
+        <code>
+    num= int(input('Digite um número:'))
+    if num % 2 == 0:
+        print(f'O número {num} é PAR')
+    else:
+        print(f'O número {num} é ÍMPAR)
+        </code>
+    </pre> 
+    <h2>Citações simples</h2>
+    Tag &lt q &gt: <q>Quotation</q>
+    <p>Segundo René Descartes: <q>Penso logo existo</q> </p>
+    <h2>Citações completas</h2>
+    <p>Tag &lt blockquote &gt: Segundo Nora Sakavic, no seu livro The Raven King:</p>
+    <blockquote cite="https://www.goodreads.com/work/quotes/25571658-the-raven-king">
+        "You know, I get it. Being raised as a superstar must be really, really difficult for you. Always a commodity, never a human being, not a single person in your family thinking you’re worth a damn off the court— yeah, sounds rough. Kevin and I talk about your intricate and endless daddy issues all the time. I know it’s not entirely your fault that you are mentally unbalanced and infected with these delusions of grandeur, and I know you’re physically incapable of holding a decent conversation with anyone like every other normal human being can, but I don’t think any of us should have to put up with this much of your bullshit. Pity only gets you so many concessions, and you used yours up about six insults ago. So please, please, just shut the fuck up and leave us alone."</blockquote>
+        <h2>Abreviações</h2>
+        <p>Tag &lt abbr &gt: Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+        <h2>Texto Invertido</h2>
+        <p>Tag &lt bdo &gt:</p>
+        <p>Rtl (Right to left): <bdo dir="rtl">To com muita vontade de ler All for the Game de novo </bdo></p> <!--Só existe 'rtl' ou 'ltr'-->
+</body>
+</html>

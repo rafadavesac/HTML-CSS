@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo-uva.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: aqua; /*Vai definir a cor de todos os <mark> que não tiverem style próprio especificado dessa página*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Maneira NÃO semântica &lt b &gt : <b>Negrito</b></p>
+    <p>Maneira semântica &lt strong &gt : <strong>Destaque</strong> (Mais nova e recomendada)
+    </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Tag não semântica &lt i &gt : <i>Itálico</i></p> <!--
+    Selecionar a frase com o cursor
+    Apertar Ctrl + Shift + p 
+    Pesquisar >abb e selecionar wrap with abbreviation
+    Escrever a tag exemplo: 'i'
+
+    Isso pode ser feito com qualquer tag, como por exemplo o <p>
+    -->
+    <p>Tag semântica &lt em &gt : <i>Emphasis</i> (Mais nova e recomendada)</p> 
+    <h2>Texto Marcado</h2>
+    <p>Usamos a tag &lt mark &gt : <mark>Marca texto</mark> </p>
+    <p>Escolhendo a cor: <mark style="background-color: rgb(243, 113, 255);">Marca texto</mark> bla bla</p>
+    <h2>Texto pequeno</h2>
+    <p> Tag &lt small &gt:  <small>letras miúdas</small> de um contrato</p>
+    <h2>Texto deletado</h2>
+    <p>Podemos marcar um texto como excluído para indicar que ele deve ser lido, mas não considerado</p>
+    <p>Tag &lt del &gt: <del>Texto riscado</del></p>
+    <h2>Texto inserido</h2>
+    <p>Podemos marcar um texto como inserido para dar uma ênfase e indicar que ele foi adicionado depois</p>
+    <p>Tag &lt ins &gt: <ins>Texto sublinhado</ins></p>
+    <h2>Texto sobrescrito</h2>
+    <p>Para inserir coisas como x20+3</p>
+    <p>Tag &lt sup &gt: x<sup>20</sup>+3</p> <!-- <sup> = superior-->
+    <h2>Texto subscrito</h2>
+    <p>Para inserir coisas do tipo H2O</p>
+    <p>Tag &lt sub &gt: H<sub>2</sub>O</p> <!-- <sub> = inferior-->
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family: 'Jully Julia' ; /*Eu que escolho o nome*/
+            src: url('Mídias/jully julia.otf') format(opentype), url('Mídia/jully julia.ttf') format('truetype'); /* url: Nome do arquivo*/
+            font-weight: normal;
+            font-style: normal;
+            /*Colocar 2 url e format = pra ter mais opção de compatibilidade com diferentes computadores*/
+
+            /*
+                Tipos de format():
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Jully Julia', Times, serif;
+            font-size: 3em; /*3em = 3 vezes o tamanho padrão da letra*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, nesciunt ducimus quod molestias ratione blanditiis quos doloremque officia quo officiis, ipsam, quibusdam natus suscipit! Sapiente minus aspernatur consequatur magnam reprehenderit!</p>
+</body>
+</html>

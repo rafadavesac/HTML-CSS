@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+/*
+
+Tudo que em HTML é 'id' em CSS é '#'
+Tudo que em HTML é 'class' em CSS é '.'
+
+*/
+body{
+    background-color:  blanchedalmond ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+h1{
+    color: rgb(2, 2, 50);
+}
+
+h1#principal{ /* Posso colocar apenas '#principal' que já funciona */
+    text-align: center;
+    font-size: 2.5em;
+    background-color:rgb(215, 199, 173);
+    text-decoration: underline;
+}
+
+h2{
+    color: rgb(6, 6, 91);
+}
+
+.basico{ /* . = class */
+    color: rgb(6, 6, 173);
+}
+
+.avançado{
+    color: blue;
+}
+
+.destaque{
+    background-color: rgba(255, 255, 255, 0.847);
+}

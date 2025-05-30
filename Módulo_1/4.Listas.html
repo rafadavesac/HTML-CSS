@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Listas</h1>
+    <h2>Listas ordenadas - a ordem faz diferença</h2>
+    <p>Tag &lt ol &gt e dentro dela a &lt li &gt</p>
+    <ol type="1" start="2"> 
+        <!--Types: 1; A; a; I; i -->
+        <!--O start define em que número a lista começa-->
+        <li>Acordar</li>
+        <li>Tomar remédio <!-- O </li> é opcional-->
+        <li>Escovar os dentes</li>
+    </ol>
+    <p>Se eu adicionar algo novo no meio da lista, os números se adaptam sozinhos</p>
+    <h2>Listas não ordenadas - não é preciso numerar</h2>
+    <p>Tag &lt ul &gt (Unordered List) e dentro dela a &lt li &gt</p>
+    <ul type="disc">
+        <!--Types: circle; disc (padrão); square -->
+        <li>Uva</li>
+        <li>Massa
+        <li>Água</li> 
+    </ul>
+    <h2>Juntando Listas 1.0</h2>
+    <p>Dá pra fazer 'níveis' de lista infinitos/p>
+    <ol>
+        <li>Frutas
+        <ul type="circle">
+            <li>Uva</li>
+            <li>Pitanga</li>
+            <li>Kiwi</li>
+        </ul>
+        <li>Bebidas</li>
+        <ol type="a" start="3">
+            <li>Suco de laranja</li>
+            <li>Água com limão</li>
+        </ol>
+    </ol>
+    <!--Passar o cursor em cima de múltiplas tags segurando Alt: quando eu apagar e escrever de novo, edita todas essas tags ao mesmo tempo-->
+    <h2>Lista de definições - tipo um dicionário</h2>
+    <p>Tag &lt dl &gt </p>
+    <p>Dentro da &lt dl &gt: &lt dt &gt (termo) e &lt dd &gt (descrição)</p>
+    <dl>
+        <dt>Termo</dt>
+        <dd>descrição</dd>
+
+        <br>
+
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+
+
+    
+</body>
+</html>

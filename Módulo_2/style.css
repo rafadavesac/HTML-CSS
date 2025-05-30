@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+ @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(-45deg,#BF4B6A,#F279A6);
+}
+
+
+
+main {
+    background-color: whitesmoke;
+    border-radius: 10px; /* Arredonda as bordas do bloco*/
+    box-shadow: 5px 5px 10px #290303a4; /* o quanto a sombra vai pro lado, o quanto a sombra vai pra baixo, o quanto a sombra vai espalhar, cor e tranparência da sombra*/
+    width: 600px;
+    padding: 10px; /*Margem do bloco main*/
+    margin: auto; /*Centraliza o bloco de texto main na tela*/
+}
+
+h1{
+    font-family: 'MonteCarlo';
+    font-size: 3em;
+    color:#400606;
+    text-align: center;
+    text-shadow: 1px 1px 3px #4e0909aa;
+}
+
+h2 {
+    color:#A61B26 ;
+}
+
+p {
+    text-align: justify;
+}
