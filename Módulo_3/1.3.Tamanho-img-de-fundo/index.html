@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url('Imagens/wallpaper002.jpg');
+            background-position: center center;/*A prioridade é sempre mostrar o centro da imagem*/
+            background-repeat: no-repeat;
+            background-size: cover; /*Se adapta ao tamanho da tela*/
+
+            background-attachment:fixed;/*O background fica fixo quando se rola o conteúdo */
+
+            /* Shorthand - background
+                color > image > position > repeat > attachment
+            */
+
+            background:black url('Imagens/wallpaper002.jpg') center center no-repeat fixed ;/*Versão shorthand*/
+        }
+
+        main{
+            max-width: 400px; /*max-width adapta pro celular*/
+            background-color: white;
+            padding: 10px;
+            margin: auto;
+            border: 2px solid darkblue;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste imagem de fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ad sunt tempora dicta libero doloremque, consectetur unde ut corporis odio praesentium, quos possimus? Iste officiis aliquid, soluta cum minima eveniet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum possimus in illo autem nihil maxime fugiat facere. Quaerat est praesentium sed ratione ex rem illo dignissimos expedita libero, aut aperiam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, nemo corporis repellat accusantium sequi alias excepturi, at velit dolorem dicta, doloribus repudiandae illum maxime? Doloribus temporibus veniam ut iure.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ad sunt tempora dicta libero doloremque, consectetur unde ut corporis odio praesentium, quos possimus? Iste officiis aliquid, soluta cum minima eveniet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum possimus in illo autem nihil maxime fugiat facere. Quaerat est praesentium sed ratione ex rem illo dignissimos expedita libero, aut aperiam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, nemo corporis repellat accusantium sequi alias excepturi, at velit dolorem dicta, doloribus repudiandae illum maxime? Doloribus temporibus veniam ut iure.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ad sunt tempora dicta libero doloremque, consectetur unde ut corporis odio praesentium, quos possimus? Iste officiis aliquid, soluta cum minima eveniet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum possimus in illo autem nihil maxime fugiat facere. Quaerat est praesentium sed ratione ex rem illo dignissimos expedita libero, aut aperiam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, nemo corporis repellat accusantium sequi alias excepturi, at velit dolorem dicta, doloribus repudiandae illum maxime? Doloribus temporibus veniam ut iure.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, ad sunt tempora dicta libero doloremque, consectetur unde ut corporis odio praesentium, quos possimus? Iste officiis aliquid, soluta cum minima eveniet?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum possimus in illo autem nihil maxime fugiat facere. Quaerat est praesentium sed ratione ex rem illo dignissimos expedita libero, aut aperiam?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aperiam, nemo corporis repellat accusantium sequi alias excepturi, at velit dolorem dicta, doloribus repudiandae illum maxime? Doloribus temporibus veniam ut iure.</p>
+    </main>
+</body>
+</html>
