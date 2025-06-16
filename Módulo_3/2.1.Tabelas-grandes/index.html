@@ -12,6 +12,21 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;/*Cabeçalho Fixo; PASSO 1*/
+        }
+
+        caption{
+            font-size:1.5em ;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgba(173, 216, 230, 0.581);
+        }
+
+        /*Cabeçalho Fixo; PASSO 2*/
+        thead > tr > th{
+           position: sticky; 
+           top:-1px;
+           background-color: lightblue; /*copiar a cor do cabeçalho*/
         }
 
         td ,th {
@@ -23,6 +38,11 @@
             background-color: lightblue;
         }
 
+        /*Efeito Zebrado*/
+        tbody > tr:nth-child(2n){ /*Vai aplicando esse estilo de 2 em 2 linhas (2n) nos <tr> do <tbody>*/
+            background-color: lightgray;
+        }
+
         tfoot{
             background-color: rgb(123, 143, 150);
             color: white;
@@ -32,6 +52,7 @@
         td.num{
             text-align: right;
         }
+
     </style>
 </head>
 <body>
@@ -39,6 +60,7 @@
     <!--
     ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPTION
         THEAD
             TR, TD, TH
         TBODY
@@ -47,10 +69,11 @@
             TR, TD, TH 
     -->
     <table>
+        <caption>População dos estados brasileiros</caption> <!-- "Título" da tabela -->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width:100px ;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -66,10 +89,78 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">17 219 679</td>
             </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14 850 513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 824 665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 539 029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9 233 656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 664 306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8 058 441</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7 350 483</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7 010 960</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4 281 209</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 229 915</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="col">Total de Habitantes</th>
                 <td class="num">muitos</td>
             </tr>
         </tfoot>
