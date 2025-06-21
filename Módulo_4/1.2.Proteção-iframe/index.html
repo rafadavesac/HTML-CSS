@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Site principal</h1>
+
+    <iframe src="form.html" frameborder="1" sandbox="sandbox"></iframe>
+
+    <p><strong>sandbox="sandbox"</strong> bloqueia todo e qualquer acesso do site externo dentro do iframe. Ou seja, deixa o seu próprio site seguro contra qualquer roubo de informação que o site do iframe tente fazer</p>
+    <p><strong>referrerpolicy="no-referrer"</strong> define que o que está carregado dentro do iframe não vai coletar nenhum tipo de informação do usuário</p>
+    <p>É possível manipular essas restrições a partir do sandbox, exemplo <code>sandbox="allow-same-origin"</code>, permite conteúdos da mesma origem. Outros exemplos: <code>"allow-forms"</code> e <code>"allow-scripts"</code> (permite comandos de JavaScript)</p>
+</body>
+</html>
